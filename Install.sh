@@ -6,7 +6,6 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
     echo "You are about to download and install the required items for HP ILO4 fan control."
-
     mkdir -p ~/autofan
     cd ~/autofan
     echo "Installing required packages..."
