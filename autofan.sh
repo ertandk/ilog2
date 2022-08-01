@@ -11,7 +11,7 @@
 #
 PASSWORD="HdsK2018++"
 USERNAME="root"
-ILOIP="192.168.1.157"
+ILOIP="localhost"
 T1="$(sensors -Aj coretemp-isa-0000 | jq '.[][] | to_entries[] | select(.key | endswith("input")) | .value' | sort -rn | head -n1)"
 T2="$(sensors -Aj coretemp-isa-0001 | jq '.[][] | to_entries[] | select(.key | endswith("input")) | .value' | sort -rn | head -n1)"
 
