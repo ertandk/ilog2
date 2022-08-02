@@ -58,8 +58,10 @@ sshpass -p $PASSWORD ssh -oStrictHostKeyChecking=no -oKexAlgorithms=+diffie-hell
 
 echo "CPU 1 Temp $T1 C"
 
+$T1=T1-gt
+echo "Sonuc $T1"
 
-if [[ $T1 -gt 67 ]]
+if [[ $T1 > 67 ]]
    then
         sshpass -p $PASSWORD ssh -oStrictHostKeyChecking=no -oKexAlgorithms=+diffie-hellman-group14-sha1 $USERNAME@$ILOIP 'fan p 3 max 255'
         sshpass -p $PASSWORD ssh -oStrictHostKeyChecking=no -oKexAlgorithms=+diffie-hellman-group14-sha1 $USERNAME@$ILOIP 'fan p 4 max 255'
