@@ -11,7 +11,7 @@
 
 PASSWORD="HdsK2018++"
 USERNAME="root"
-ILOIP="192.168.1.157"
+ILOIP="192.168.1.156"
 
 FILE="/usr/bin/sshpass"
 echo "ESXI HP iLO Fan Control Utility - By Thomas Wilbur"
